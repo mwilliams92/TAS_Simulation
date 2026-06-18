@@ -96,7 +96,7 @@ void DetectorConstruction::DefineMaterials()
   G4Material* NaITl = new G4Material("NaI_Tl", density= 3.67 * g/cm3, 3);
   NaITl->AddElement(Na, 0.4999);
   NaITl->AddElement(I,  0.4999);
-  NaITl->AddElement(Tl, 0.0002); // example doping fraction
+  NaITl->AddElement(Tl, 0.0002); // example doping fraction for NaI
 
   // Print materials
   G4cout << *(G4Material::GetMaterialTable()) << G4endl;
